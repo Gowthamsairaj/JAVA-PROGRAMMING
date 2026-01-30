@@ -1,0 +1,6 @@
+1. Print the sum of numbers from 1 to 100 using for loop
+2. Print all the even numbers from 1 to 50 and skip 38 and 46 using continue. 
+3. Print all the odd numbers from 1 to 100 using while loop
+4. Print 1 to 10 but stop the loop when the number is 6 using break 
+5. Reverse an integer using while loop
+6. Count the number of digits in the given number using while loop

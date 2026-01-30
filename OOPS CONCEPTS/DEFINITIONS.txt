@@ -1,0 +1,101 @@
+1.Define Encapsulation:
+
+Encapsulation in Java is the process of wrapping data (variables) and methods
+into a single unit (class) and restricting direct access to data using access modifiers like private.
+
+Simple Explanation (to say if asked further)
+
+Data is hidden from outside classes
+
+Access is given through methods
+
+Improves security and data control
+
+Real-Time Example
+
+Like an ATM machine:
+You cannot access cash directly; you must use allowed operations (withdraw, check balance).
+
+Key Points (Interview Bullets)
+
+Achieved using private variables
+
+Accessed using public methods
+
+Helps in data hiding
+
+Increases maintainability
+
+class Student {
+    private int age;
+    private String name;
+
+    public void setData(String n, int a) {
+        name = n;
+        age = a;
+    }
+
+    public void display() {
+        System.out.println(name);
+        System.out.println(age);
+    }
+}
+
+public class EncapsulationDemo {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.setData("SAI", 21);
+        s.display();
+    }
+}
+What is Abstraction in Java?
+Interview Definition
+
+Abstraction in Java is the process of hiding implementation details and showing only essential features to the user.
+
+Simple Explanation (to say if asked further)
+
+Focus on what the object does, not how it does
+
+Achieved using abstract classes and interfaces
+
+Real-Time Example
+
+Like driving a car:
+You use steering, brake, and accelerator without knowing engine internals.
+
+Key Points (Interview Bullets)
+
+Achieved using abstract class & interface
+
+Abstract methods have no body
+
+Improves security and flexibility
+
+Supports loose coupling
+
+🔁 One-Line Difference (Very Common Interview Question)
+
+Encapsulation hides data, while Abstraction hides implementation.
+
+abstract class Vehicle {
+    abstract void start();
+
+    void fuel() {
+        System.out.println("Vehicle needs fuel");
+    }
+}
+
+class Bike extends Vehicle {
+    void start() {
+        System.out.println("Bike starts with kick or self");
+    }
+}
+
+public class AbstractionDemo {
+    public static void main(String[] args) {
+        Vehicle v = new Bike();
+        v.start();
+        v.fuel();
+    }
+}

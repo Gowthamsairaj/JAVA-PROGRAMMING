@@ -1,0 +1,4 @@
+1. Find the power of a number without using Math.pow()
+2. Calculate the electricity bill based on units consumed
+3. Check whether a character is uppercase, lowercase, digit or special character
+4. Find the LCM of two numbers
